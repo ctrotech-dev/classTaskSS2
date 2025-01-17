@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClassTasks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1e293b",
+            accent: "#2563eb",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-primary text-gray-100">
+  <div id="app" class="flex flex-col h-screen">
+    <header class="bg-gray-900 py-2 px-4 flex items-center justify-between shadow-md">
+      <h1 class="text-xl font-semibold">ClassTasks</h1>
+      <button id="refreshBtn" class="text-gray-100 hover:text-accent">
+        <ion-icon name="refresh-outline" size="large"></ion-icon>
+      </button>
+    </header>
+    <main id="content" class="flex-1 overflow-y-auto p-4"></main>
+   
+    <nav class="bg-gray-800 py-2 px-4 flex justify-around sticky bottom-0 left-0 right-0">
+      <button class="nav-btn" data-route="dashboard">
+        <ion-icon name="home-outline"></ion-icon>
+        <span class="text-sm">Home</span>
+      </button>
+      <button class="nav-btn" data-route="assignments">
+        <ion-icon name="book-outline"></ion-icon>
+        <span class="text-sm">Assignments</span>
+      </button>
+      <button class="nav-btn" data-route="profile">
+        <ion-icon name="person-outline"></ion-icon>
+        <span class="text-sm">Profile</span>
+      </button>
+      <button class="nav-btn" data-route="analytics">
+        <ion-icon name="stats-chart-outline"></ion-icon>
+        <span class="text-sm">Chart</span>
+      </button>
+    </nav>
+  </div>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="./js/routes.js" type="module"></script>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
