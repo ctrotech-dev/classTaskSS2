@@ -7,7 +7,7 @@ const routes = {
       <header class="flex flex-col gap-10 text-white font-semibold">
       <!-- Hero section with background image -->
       <div class="h-64 w-full rounded-lg bg-cover bg-center" 
-           style="background-image: url('./assets/hero-background.png');">
+           style="background-image: url('hero-background.png');">
         <div class="flex h-full flex-col items-center justify-between p-4">
           <!-- Glassmorphism card with event info -->
           <h2 class="glassmorphism max-w-[273px] rounded py-2 px-2 w-full text-center text-xl font-semibold">
@@ -101,13 +101,13 @@ const routes = {
         <!-- Physics Card -->
         <div class="bg-gray-800 p-6 rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition duration-300" onclick="navigateToAssignments('physics')">
           <div class="flex items-center justify-between mb-4">
-            <img src="./assets/profile.png" alt="Teacher Profile" class="rounded-full w-24 object-cover mr-4">
+            <img src="profile.png" alt="Teacher Profile" class="rounded-full w-24 object-cover mr-4">
             <div>
               <h3 class="text-xl font-semibold text-white">Mr. Odejobi Abiola</h3>
               <p class="text-gray-400">Physics Teacher</p>
             </div>
           </div>
-          <img src="./assets/physics.jpg" alt="Physics Image" class="w-full rounded-lg mb-4">
+          <img src="physics.jpg" alt="Physics Image" class="w-full rounded-lg mb-4">
           <h3 class="text-xl font-semibold text-white">Physics: The Foundation of the Universe</h3>
           <p class="text-gray-300 mb-4">Unveiling the mysteries of matter, energy, space, and time.</p>
           <div class="mb-4" id="physics-description">
@@ -171,13 +171,13 @@ const routes = {
         <!-- Chemistry Card -->
         <div class="bg-gray-800 p-6 rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition duration-300" onclick="navigateToAssignments('chemistry')">
           <div class="flex items-center justify-between mb-4">
-            <img src="./assets/profile.png" alt="Teacher Profile" class="rounded-full w-24 object-cover mr-4">
+            <img src="profile.png" alt="Teacher Profile" class="rounded-full w-24 object-cover mr-4">
             <div>
               <h3 class="text-xl font-semibold text-white">Mr. Odejobi Abiola</h3>
               <p class="text-gray-400">Chemistry Teacher</p>
             </div>
           </div>
-          <img src="./assets/chemistry.jpg" alt="Chemistry Image" class="w-full rounded-lg mb-4">
+          <img src="chemistry.jpg" alt="Chemistry Image" class="w-full rounded-lg mb-4">
           <h3 class="text-xl font-semibold text-white">Chemistry: The Science of Matter and Transformation</h3>
           <p class="text-gray-300 mb-4">An introduction to chemical reactions in organic compounds.</p>
           <div class="text-gray-300 text-sm mb-4 overflow-hidden" id="chemistry-description">
